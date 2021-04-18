@@ -9,14 +9,25 @@
   box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; 
+  height: 1000px; 
 }
-
 
 .row:after {
   content: "";
@@ -31,6 +42,7 @@
       h3  {font-family:spectral;}
       body {background-color:lavender;border-style: groove;}
       p    {color:black;font-family: karla;}
+   
       
 </style>
 </head>
@@ -43,15 +55,23 @@
 <div class="row">
   <div class="column" style="background-color:aliceblue;">
     <h3><center>Antelope Island State Park</center></h3>
-    <p>Some text..</p>
+    <p>This park is located on an island about 25 miles north of Salt Lake City. It offers hiking trails, kayak and paddleboard rentals, camping grounds, and lots of wildlife sighting including bison, antelope, and coyote.</p>
+    <!--source: https://utah.com/antelope-island-state-park-->
+    <p><center><img src="IMG_6617.JPG" width="448" height="336"></center></p>
+    <p><center><img src="IMG_6615.JPG" width="448" height="336"></center></p>
   </div>
   <div class="column" style="background-color:whitesmoke;">
     <h3><center>Bonneville Salt Flats</center></h3>
-    <p>Some text..</p>
+    <p>When the ancient Lake Bonneville receded, the Salt Flats began to form. It left behind large concentrations of dissolved minerals including gypsum and halit (which is common table salt).</p>
+    <p><center><img src="IMG_6601.png" width="448" height="336"></center></p>
+    <p><center><img src="IMG_6616.JPG" width="448" height="336"></center></p>
   </div>
   <div class="column" style="background-color:aliceblue;">
     <h3><center>Snowbird Ski Resort</center></h3>
-    <p>Some text..</p>
+    <p>Snowbird is part of the Little Cottonwood Canyon in the Wasatch Range of the Rocky Mountains.The mountain contains a variety of beginner, intermediate and expert terrain for skiing and snowboarding.</p>
+    <!--source: https://www.onthesnow.com/utah/snowbird/ski-resort.html-->
+    <p><center><img src="IMG_6550.png" width="448" height="336"></center></p>
+    <p><center><img src="IMG_6558.png" width="448" height="336"></center></p>
   </div>
 </div>
   </body>
