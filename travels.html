@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      @font-face {font-family: spectral;src: url(Spectral-Regular.ttf);}
-      h1   {color:coral;}
-      h2{font-family:spectral;}
-      body {background-color:lavender;border-style: groove;}
-      p    {color:black;}
-      </style>
     
     <meta charset="utf-8">
-    <title>My Site | A website by me</title>
-  </head>
-  <body>
-    <h1><center><font face ="Spectral">Travel Highlight</font></center></h1>
-    <h2>Salt Lake City, Utah</h2>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <p></p>
-    <p>London</p>
-    <p>Mexico</p>
-    <p>France</p>
-    <p>Netherlands</p>
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@font-face {font-family: spectral;src: url(Spectral-Regular.ttf);}
+@font-face {font-family: karla;src: url(Karla-VariableFont_wght.ttf);}
+      h1   {color:coral;}
+      h2 {font-family:spectral;}
+      h3  {font-family:spectral;}
+      body {background-color:lavender;border-style: groove;}
+      p    {color:black;font-family: karla;}
+      
+</style>
+</head>
+<body>
+</head>
+<body>
+  <h1><center><font face ="Spectral">Travel Highlight of the Month</font></center></h1>
+  <h2><center>Salt Lake City, Utah</center></h2>
+
+<div class="row">
+  <div class="column" style="background-color:aliceblue;">
+    <h3><center>Antelope Island State Park</center></h3>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:whitesmoke;">
+    <h3><center>Bonneville Salt Flats</center></h3>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:aliceblue;">
+    <h3><center>Snowbird Ski Resort</center></h3>
+    <p>Some text..</p>
+  </div>
+</div>
   </body>
+
+  <!--columns from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns-->
 </html>
