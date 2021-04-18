@@ -5,14 +5,16 @@
         @font-face {font-family: spectral;src: url(Spectral-Regular.ttf);}
         @font-face {font-family: karla;src: url(Karla-VariableFont_wght.ttf);}
         h1   {color:coral;}
-        body {background-color:lavender;border-style: groove;padding:70px;font-family:karla}
+        body {background-color:lavender;border-style: groove;font-family:karla}
         p    {color:black;}
         </style>
     
     <meta charset="utf-8">
-    <title>My Site | A website by me</title>
+
   </head>
   <body>
+    <button onclick="goBack()">Back</button>
+    <script>function goBack() {window.history.back();}</script>
     <h1><center><font face ="Spectral">Give It A Listen</font></center></h1>
 
     <p><center><font face ="Spectral"><a href="https://www.pushkin.fm/show/revisionist-history/">Revisionist History</a></font></center></p>
